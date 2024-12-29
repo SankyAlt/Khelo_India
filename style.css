@@ -1,0 +1,622 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bowlby+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bowlby+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+ID+Guides&family=Rubik+Mono+One&family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Audiowide&family=Bowlby+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+ID+Guides&family=Rubik+Mono+One&family=Unbounded:wght@200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat",sans-serif ;
+    font-size: 20px;
+}
+
+
+
+
+body{
+    
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0%;
+    padding: 0%;
+    object-fit: fill;
+    width: 100%;
+}
+li ,a  ,button{
+    
+    font-weight: 500;
+    font-size: 17px;
+    color:aliceblue;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content:space-between;
+    padding: 15px 10%;
+    background-color: cornflowerblue;
+    
+}
+
+
+ul{
+    list-style-type: none;
+    
+    
+}
+.logo{
+    height: 150px;
+    width: 150px;
+}
+#nav>li{
+    
+    display: inline-block;
+    padding: 0% 15px;
+    font-size: 20px;
+    font-weight: 1000 ;
+    border-radius: 10px;
+    padding: 3px;
+    margin-left: 12px;
+
+}
+#nav>li:hover{
+    background-color: rgb(238, 142, 87);
+    
+    transition: background-color 0.4s, transform 0.3s;
+}
+button{
+    background-color: rgb(253, 11, 59);
+    border-radius: 20px;
+    padding: 10% 15%;
+    border: none;
+}
+button:hover{
+    padding: 11% 16%;
+    background-color: rgb(253, 11, 59);
+    box-shadow: 4px 4px 5px rgb(113, 25, 43) ;
+}
+
+
+a{
+    font-size: large;
+}
+#register,#login-button{
+    background-color:rgb(253, 11, 59);
+    border-radius: 20px;
+    padding:10px;
+    color: white;
+    border-style: none;
+    font-size:17px;
+}
+
+
+
+
+
+.title-text{
+    font-family: "Bowlby One", sans-serif;
+    font-weight:300;
+    
+    font-style: normal;
+    text-transform:uppercase;
+    
+    color: rgb(44, 197, 44);
+
+    text-align: center;
+    background-image: url(./mainimage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(100%);
+    height: 400px;
+    width: auto;
+    padding-top: 70px;
+    font-size: 60px;
+    text-align: center;
+    
+    
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+/*Registration form
+.form-box h2{
+    text-align: center;
+    color: white;
+    font-size: 26px;
+
+}
+.form-box{
+    display: flex;
+    justify-content: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    flex-flow: column;
+    background-color: hsla(1, 38%, 63%, 0.3);
+    padding: 20px;
+    height: 450px;
+    width: 500px;
+    box-shadow: rgb(255, 255, 255, 0.7);
+    border-color: rgb(255, 255, 255, 0.7) ;
+}
+.form-box input{
+    padding: 3px;
+    border-radius: 10px;
+    border-color: cornsilk;
+
+}
+.form-box {
+    color: aliceblue;
+}*/
+
+/*login page*/
+.login-page h2{
+    text-align: center;
+    color: white;
+    font-size: 26px;
+
+}
+.login-page{
+    display: flex;
+    justify-content: center;
+}
+.login-form{
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    flex-flow: column;
+    background-color: hsla(1, 38%, 63%, 0.3);
+    padding: 20px;
+    height: 300px;
+    width: 500px;
+    box-shadow: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255, 0.7) ;
+}
+.login-page input{
+    padding: 3px;
+    border-radius: 10px;
+    border-color: cornsilk;
+
+}
+.login-page{
+    color: aliceblue;
+}
+
+/*home*/
+.basket{
+    display: flex;
+    justify-content: space-evenly;
+    height: 550px;
+    width: auto;
+    padding-left: 50px;
+    float: left;
+    margin-right: 200px;
+    margin-top: 20px;
+    border-radius: 35px;
+}
+
+
+
+#about{
+   
+    display: flex;
+    flex-wrap: nowrap;
+    flex-flow: row;
+    justify-content:space-between;
+    color:black;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 25px;
+    margin-top: 15px;
+    border-radius: 20px;
+
+}
+#about>p{
+    margin: 17px;
+    width: 700px;
+    height: auto;
+}
+
+span {
+    font-family: "Archivo Black", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 35px;
+  }
+  
+
+
+#homevid{
+    width: 550px;
+    height: auto;
+    margin: 30px;
+    background-color: black;
+}
+#homevid:hover{
+    width:555px;
+    box-shadow: 10px 10px 15px rgb(39, 53, 62);
+    transition: box-shadow 0.4s, transform 0.3s;
+}
+#about2{
+    width: 850px;
+    height: 600px;
+    margin: 20px;
+    text-align: center;
+}
+.homesection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/*about page*/
+.aboutimg{
+    width: 600px;
+    height: auto;
+    margin: 20px;
+    border-radius:25px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+.aboutpara{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+.text{
+    text-align: center;
+    color: black;
+}
+hr{
+    height: 10px;
+    width: 800px;
+    margin: 20px;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+#aboutlist>li{
+    color: white;
+    margin: 10px;
+    font-size: 18px;
+    font-weight:500;
+    
+}
+#aboutlist{
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: coral;
+    width: 400px;
+    justify-content: center;
+    display: flex;               
+    justify-content: center;     
+    align-items: center;               
+    margin: 0 auto;
+   
+}
+#aboutlist:hover{
+    width:405px;
+    background-color: rgb(215, 88, 38);
+    box-shadow: 10px 10px 15px rgb(99, 69, 40);
+    transition: box-shadow 0.4s, transform 0.3s;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.cards>div{
+    width: 400px;
+    height:auto;
+    background-color: cornflowerblue;
+    border-radius: 20px;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+}
+.cards>div:hover{
+    width: 405px;
+    height: auto;
+    background-color: rgb(48, 94, 180);
+    box-shadow: 10px 10px 15px rgb(54, 75, 89);
+    transition: box-shadow 0.4s, transform 0.3s;
+}
+
+
+/*discipline page*/
+.discipline-container>div{
+    width: 270px;
+    height: auto;
+    color: white;
+    background-color:coral;
+    margin: 15px;
+    padding: 30px;
+    border-radius: 30px;
+}
+.discipline-container>div:hover{
+    width: 275px;
+    background-color: rgb(215, 88, 38);
+    box-shadow: 10px 10px 15px rgb(99, 69, 40);
+    transition: box-shadow 0.4s, transform 0.3s;
+}
+.discipline-container>div>img{
+    width: 100px;
+}
+.discipline-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.discipline-img{
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/*training page*/
+.image-slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px; 
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    animation: slide 8s infinite; 
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 3s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(0); }
+    100% { transform: translateX(0); }
+}
+.tline{
+    height: 20px;
+    width: 800px;
+    margin: 20px;
+    background-color: coral;
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+h2{
+    text-align: center;
+}
+.row{
+    background-color: rgba(246, 155, 122, 0.7);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+
+    color: white;
+    font-weight: 600;
+}
+.row:hover{
+    width:405px;
+    padding: 13px;
+    background-color: coral;
+    box-shadow: 10px 10px 15px rgb(99, 69, 40);
+    transition: box-shadow 0.4s, transform 0.3s;
+}
+.n1{
+    width: 1200px;
+}
+.n2{
+    width: 1000px;
+}
+.n3{
+    width: 800px;
+}
+.n4{
+    width: 600px;
+}
+.training-bg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./trainingbg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1200px;
+}
+/*footer section*/
+.khelo-india-footer {
+    background-color: cornflowerblue; /* Blue background */
+    color: #fff; /* White text */
+    padding: 20px 0;
+    font-family: sans-serif; /* Default font */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     
+  }
+  
+  .footer-container {
+      width: 80%;
+      max-width: 1200px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px 0;
+      
+  }
+  
+  .social-info, .khelo-india-logos {
+    display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: flex-start;
+      margin-bottom: 20px;
+  }
+  
+  .footer-menu {
+      margin-bottom: 20px;
+  }
+  .footer-menu a {
+      color: #fff;
+      text-decoration: none;
+  }
+  
+  .social-icons {
+    display: flex;
+      margin-bottom: 10px;
+  }
+  
+  .social-icon {
+    margin-right: 10px;
+    display: block;
+  }
+  
+  .social-icon img {
+      width: 30px;
+      height: 30px;
+      
+      border-radius: 4px;
+      padding: 3px;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
+  .khelo-india-logos img {
+    height: 50px; 
+      margin-right: 15px;
+  }
+  .copyright-area {
+      background-color: #161e2d;
+      padding: 10px 0;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9em;
+  }
+  
+  .scroll-top {
+  position: absolute;
+      bottom: 30px;
+      right: 40px;
+  }
+  
+  .scroll-to-top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background-color: #c16e2e;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+  
+  .scroll-to-top:hover {
+      background-color: #b65f22;
+  }
+  .scroll-to-top svg{
+    height: 25px;
+    width: 25px;
+  }
+  /*get involved page*/
+  .getinvolvebg{
+   
+    background-image: url(./volleyball.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+    background-position: center;
+    margin-bottom: 25px;
+  }
+  .getinvolvebg p{
+     font-size: 80px;
+    color: white;
+    margin-left: 30px;
+    font-weight: 700;
+
+  }
+  .getcontainer{
+    width: 1400px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .getimage{
+    width: 120px;
+    height: auto;
+    border-radius: 30px;
+  }
+  .getinfo{
+    width: 800px;
+    height: auto;
+  }
+  .getcards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .getcards div{
+    color: white;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    margin: 25px;
+    border-radius: 20px;
+    background-color: coral;
+  }
+  .getcards>div:hover{
+    width:505px;
+    
+    background-color: rgb(238, 97, 45);
+    box-shadow: 10px 10px 15px rgb(99, 69, 40);
+    transition: box-shadow 0.4s, transform 0.3s;
+}
